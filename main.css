@@ -41,7 +41,9 @@ header {
     text-align: center;
     top: 50%;
     transform: translateY(-50%);
-    width: 100%
+    width: 100%;
+    opacity: 0;
+    animation: slide-down-fade-in 1.5s 1s forwards;
 }
 
 section.parallax {
@@ -114,11 +116,17 @@ section.content p {
     justify-content: space-around;
     flex-wrap: wrap;
 
+
 }
 
 
 .icon-block img {
     width: 150px;
     margin: 30px;
+    opacity: 0;
 
+}
+
+.icon-block img.visible {
+    animation: zoom-in-fade-in 1s forwards;
 }
